@@ -1,0 +1,152 @@
+.completionCard {
+    margin-bottom: var(--space-lg);
+}
+
+.loading {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
+
+/* Prayer List */
+.prayerList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.prayerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all var(--transition-fast);
+}
+
+.prayerRow.nextPrayer {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(13, 148, 136, 0.1) 100%);
+    border-color: rgba(13, 148, 136, 0.2);
+}
+
+.prayerRow.prayed {
+    opacity: 0.6;
+}
+
+.prayerInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.prayerIcon {
+    font-size: var(--text-xl);
+}
+
+.prayerName {
+    font-size: var(--text-base);
+    font-weight: 600;
+}
+
+.prayerArabic {
+    font-family: var(--font-arabic);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+.prayerActions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.prayerTime {
+    font-size: var(--text-base);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-secondary);
+}
+
+.nextBadge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--islamic-primary);
+    background: rgba(13, 148, 136, 0.15);
+    padding: 2px 6px;
+    border-radius: var(--radius-xl);
+}
+
+.prayerCheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.prayerCheck:hover {
+    background: var(--bg-elevated);
+}
+
+/* Additional Times */
+.additionalGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+}
+
+.additionalItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.additionalLabel {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.additionalTime {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Dua Card */
+.duaCard {
+    background: var(--islamic-gold-glow);
+    border: 1px solid rgba(212, 168, 67, 0.15);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.duaArabic {
+    font-family: var(--font-arabic);
+    font-size: var(--text-xl);
+    color: var(--islamic-gold);
+    line-height: 2;
+    margin-bottom: var(--space-md);
+}
+
+.duaEnglish {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.duaRef {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}

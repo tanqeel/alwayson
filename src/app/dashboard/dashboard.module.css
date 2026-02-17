@@ -1,0 +1,258 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.greeting {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.date {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-top: var(--space-xs);
+}
+
+.hijriDate {
+    font-size: var(--text-xs);
+    color: var(--islamic-gold);
+    margin-top: 2px;
+}
+
+.streakBadge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--accent-emerald-glow);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    min-width: 64px;
+}
+
+.streakNumber {
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: var(--accent-emerald);
+    line-height: 1;
+}
+
+.streakLabel {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-emerald-dim);
+    margin-top: 2px;
+}
+
+/* Prayer Widget */
+.prayerWidget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-lg);
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(13, 148, 136, 0.08) 100%);
+    border: 1px solid rgba(13, 148, 136, 0.15);
+}
+
+.prayerLeft {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.prayerIcon {
+    font-size: var(--text-2xl);
+}
+
+.prayerLabel {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.prayerName {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--islamic-primary);
+}
+
+.prayerRight {
+    text-align: right;
+}
+
+.prayerTime {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.prayerCountdown {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+/* Progress */
+.progressSection {
+    margin-bottom: var(--space-lg);
+}
+
+.progressNote {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-top: var(--space-sm);
+}
+
+/* Habits Grid */
+.habitsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+}
+
+.habitChip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: var(--space-md) var(--space-sm);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    position: relative;
+    cursor: pointer;
+}
+
+.habitChip:hover {
+    background: var(--bg-card-hover);
+}
+
+.habitChip.habitDone {
+    background: var(--accent-emerald-glow);
+    border-color: rgba(52, 211, 153, 0.2);
+}
+
+.habitIcon {
+    font-size: var(--text-xl);
+}
+
+.habitLabel {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.habitDone .habitLabel {
+    color: var(--accent-emerald);
+}
+
+.habitCheck {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: var(--accent-emerald);
+}
+
+/* Task Form */
+.taskForm {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.taskInput {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+}
+
+.taskAddBtn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+}
+
+/* Task List */
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-card);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all var(--transition-fast);
+}
+
+.taskItem.taskDone {
+    opacity: 0.5;
+}
+
+.taskCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 2px;
+}
+
+.taskText {
+    flex: 1;
+    font-size: var(--text-sm);
+}
+
+.taskDone .taskText {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.taskDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    padding: 4px;
+    border-radius: var(--radius-sm);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.taskItem:hover .taskDelete {
+    opacity: 1;
+}
+
+.taskDelete:hover {
+    color: var(--accent-red);
+}
+
+.emptyTasks {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
